@@ -1,12 +1,7 @@
 version: 2
 jobs:
   build:
-    branches:
-      only:
-        - master
     docker:
-      image: circleci/circleci-cli
+      - image: circleci/circleci-cli
     steps:
       - checkout
-
-
