@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: docker
+    machine: true
     steps:
       - checkout
       - run: docker build -t hello-world-ruby .
